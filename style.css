@@ -1,0 +1,90 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+html,body{
+    height: 100%;
+    width: 100%; 
+    background-color: rgb(210, 220, 64);
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* We can do the same thing meaning adjusting the card position with those attributes who are in comments */
+.cards{
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+
+    height: 300px;
+    width: 240px;
+    border: 2px solid black;
+    border-radius: 15px;
+    /* overflow: hidden; */
+}
+
+#p1{
+    /* transform: translate(-50%,-50%); */
+    z-index: 5;
+  
+}
+
+#p2{
+    /* transform: translate(-50%,-50%) rotate(-5deg); */
+    z-index: 4;
+    rotate: -7deg;
+  
+}
+
+#p3{
+    /* transform: translate(-50%,-50%) rotate(-10deg); */
+    z-index: 3;
+    rotate: -14deg;
+    
+}
+
+#p4{
+    /* transform: translate(-50%,-50%) rotate(-15deg); */
+    z-index: 2;
+    rotate: -21deg;
+   
+}
+
+
+#p5{
+    /* transform: translate(-50%,-50%) rotate(-20deg); */
+    z-index: 1;
+    rotate: -28deg;
+   
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* for hovering...we cant use hover in class elements...it will create some conflicts */
+
+#p1:hover{
+    z-index: 5;
+}
+#p2:hover{
+    z-index: 5;
+}
+#p3:hover{
+    z-index: 5;
+}
+#p4:hover{
+    z-index: 5;
+}
+#p5:hover{
+    z-index: 5;
+}
